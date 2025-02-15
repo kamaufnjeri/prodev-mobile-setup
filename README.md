@@ -7,7 +7,7 @@ This document outlines the steps I took to set up my mobile development environm
 
 ## My Setup Process
 
-### 1️ Installed Expo Go on Android
+### 1 Installed Expo Go on Android
 I first installed **Expo Go** on my Android device from the [Google Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent).
 
 ---
