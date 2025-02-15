@@ -7,37 +7,50 @@ This document outlines the steps I took to set up my mobile development environm
 
 ## My Setup Process
 
-### 1️⃣ Installed Expo Go on Android
+### 1️ Installed Expo Go on Android
 I first installed **Expo Go** on my Android device from the [Google Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent).
 
-### 2️⃣ Registered an Expo Account
+---
+
+### 2️ Registered an Expo Account
 After installing Expo Go, I registered an account within the app to enable testing and project management.
+# React Native Expo Setup & Troubleshooting
 
-### 3️⃣ Attempted to Install Expo CLI
-I tried installing **Expo CLI** globally using:
-```sh
-npm install -g expo-cli
-```
-However, I encountered an issue due to an outdated version of **Node.js**.
+---
 
-### 4️⃣ Upgraded Node.js to Version 20
-To resolve the issue, I upgraded to the latest **Node.js LTS (version 20)** by downloading it from the [official Node.js website](https://nodejs.org/). After upgrading, I verified the installation:
+### 3 Setting Up Expo with React Native
+
+To create a new Expo project, follow these steps:
+
+#### 1. Install Node.js
+Ensure you have **Node.js 16** or a **supported version (LTS recommended)** installed.  
+Node.js **17+ and higher** may cause issues with `npm install -g expo-cli` and `npx create-expo-app@latest APP-NAME`.
+
+You can check your Node.js version by running:
+
 ```sh
 node -v
-npm -v
 ```
 
-### 5️⃣ Successfully Installed Expo CLI
-After upgrading Node.js, I was able to install Expo CLI successfully:
+If you're on Node.js 17+ and encounter issues, consider downgrading to Node.js LTS (e.g., 16.x) using **nvm**:
+
+```sh
+nvm install 16
+nvm use 16
+```
+
+#### 2. Install Expo CLI
+
+If you're using **Node.js 16 or lower**, you can install Expo globally:
+
 ```sh
 npm install -g expo-cli
 ```
 
-### 6️⃣ Verified the Installation
-I confirmed that Expo CLI was installed correctly by checking its version:
-```sh
-expo --version
-```
+However, if you're on **Node.js 17+**, avoid installing `expo-cli` globally. Instead, use `npx create-expo-app@latest APP-NAME`
+`:
+
+---
 
 ### **Create Your First Mobile App**
 
@@ -69,6 +82,8 @@ If you encounter issues with dependencies, caching, or unexpected behavior, you 
 npm run reset-project
 ```
 
+---
+
 ### Effect of `npm run reset-project`
 Running this command will:
 1. **Remove `node_modules` and `package-lock.json`** – Ensures dependencies are reinstalled from scratch.
@@ -87,15 +102,9 @@ expo r -c
 
 ---
 
-## Challenges Faced
-- Initially had an **older version of Node.js**, which caused issues when installing Expo CLI. This was resolved by upgrading to **Node.js 20**.
-
----
 
 ## Repository Information
 - **GitHub Repository**: `prodev-mobile-setup`
-- **Directory**: `mobile-development-setup`
-- **File**: `README.md`
 
 ---
 
