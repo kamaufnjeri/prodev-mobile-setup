@@ -39,6 +39,52 @@ I confirmed that Expo CLI was installed correctly by checking its version:
 expo --version
 ```
 
+### **Create Your First Mobile App**
+
+#### Steps
+1. Navigate to your project directory:
+   ```sh
+   cd prodev-mobile-setup
+   ```
+2. Initialize a new Expo project:
+   ```sh
+   npx create-expo-app@latest .
+   ```
+3. Modify the home screen:
+   - Open `app/(tabs)/index.tsx`.
+   - Change **Welcome!** to **First App Created**.
+4. Run and test your application:
+   ```sh
+   npx expo start
+   ```
+5. Reset the application:
+   ```sh
+   npm run reset-project
+   ```
+
+## Resetting the Project
+If you encounter issues with dependencies, caching, or unexpected behavior, you can reset the project using:
+
+```sh
+npm run reset-project
+```
+
+### Effect of `npm run reset-project`
+Running this command will:
+1. **Remove `node_modules` and `package-lock.json`** – Ensures dependencies are reinstalled from scratch.
+2. **Clear Metro Bundler Cache** – Removes outdated JavaScript bundles.
+3. **Clear Watchman Cache** – Resets file watchers.
+4. **Reinstall Dependencies** – Runs `npm install` to fetch fresh packages.
+5. **Reset Expo Cache** – Ensures a clean build environment.
+
+If issues persist, you can manually reset the project with:
+
+```sh
+rm -rf node_modules package-lock.json
+npm install
+expo r -c
+```
+
 ---
 
 ## Challenges Faced
@@ -55,4 +101,3 @@ expo --version
 
 ## Author
 **Florence Kamau**
-
