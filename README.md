@@ -12,9 +12,9 @@ I first installed **Expo Go** on my Android device from the [Google Play Store](
 
 ---
 
-### 2️ Registered an Expo Account
+### 2 Registered an Expo Account
 After installing Expo Go, I registered an account within the app to enable testing and project management.
-# React Native Expo Setup & Troubleshooting
+
 
 ---
 
