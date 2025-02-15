@@ -15,7 +15,6 @@ I first installed **Expo Go** on my Android device from the [Google Play Store](
 ### 2 Registered an Expo Account
 After installing Expo Go, I registered an account within the app to enable testing and project management.
 
-
 ---
 
 ### 3 Setting Up Expo with React Native
@@ -48,7 +47,7 @@ npm install -g expo-cli
 ```
 
 However, if you're on **Node.js 17+**, avoid installing `expo-cli` globally. Instead, use `npx create-expo-app@latest APP-NAME`
-`:
+`
 
 ---
 
@@ -75,14 +74,14 @@ However, if you're on **Node.js 17+**, avoid installing `expo-cli` globally. Ins
    npm run reset-project
    ```
 
+---
+
 ## Resetting the Project
 If you encounter issues with dependencies, caching, or unexpected behavior, you can reset the project using:
 
 ```sh
 npm run reset-project
 ```
-
----
 
 ### Effect of `npm run reset-project`
 Running this command will:
